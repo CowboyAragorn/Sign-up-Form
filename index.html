@@ -13,35 +13,40 @@
         <img id = 'img' src="https://images.unsplash.com/photo-1521785241181-092e2c5d2f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="Jail">
         <div id="logoContainer">
             <span class="material-symbols-outlined">
-                table_chart
+                view_week
                 </span>
             <div id="logo">Jail</div>
         </div>
     </div>
     <div id="formRightContainer">
         <div id="formRightInputsContainer">
-            <h1 class="descriptionText">You think you got what it takes?</h1>
-            <h1 class="descriptionText">We heard you said "They never woulda kept me there that long" while watching The Shawshank Redemption</h1>
-            <h1 class="descriptionText">Cmon big guy, take your chances</h1>
-
+            <div id = 'descriptionContainer'>
+                <h1 class="descriptionText">You think you got what it takes?</h1>
+                <h1 class="descriptionText">We heard you said "They never woulda kept me there that long" while watching The Shawshank Redemption</h1>
+                <h1 class="descriptionText">Cmon big guy, take your chances</h1>
+            </div> 
+            
             <div id="formInputsFlexContainer">
-                <div class="row" id="row1"></div>
+                <div class="column" id="column1">
                     <label for="firstName">First Name</label>
                     <input type="text" name="firstName" id="firstName">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName">
-                <div class="row" id="row2"></div>
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" name="phoneNumber" id="phoneNumber">
-                <div class="row" id="row3"></div>
                     <label for="password">Password</label>
                     <input type="text" name="password" id="password">
+
+                </div>
+                <div class="column" id="column2">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
                     <label for="confirmPassword">Confirm Password</label>
                     <input type="text" name="confirmPassword" id="confirmPassword">
-            </div>
-            <button class="submitBtn">Go To Jail</button>
+
+                </div>
+            </div>  
+            <div id="buttonFlexContainer"><button class="submitBtn">Go To Jail</button></div>
             <p class="loginCheckText">Already supposed to be here? Turn yourself in</p>
         </div>
     </div>

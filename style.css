@@ -132,7 +132,7 @@ body{
 
 }
 #descriptionContainer{
-    gap: 15px;
+    gap: 3vh;
     font-size: 2rem;
 }
 
@@ -150,6 +150,18 @@ body{
 input{
     margin-bottom: 15px;
     border-radius: 7px;
-    border: 1pt solid black;
+    border: 2pt solid #E5E7EB;
     padding: .5rem;
+}
+/*probably could have just used input here, but playing around with it*/
+.column> *:nth-child(2n):focus{
+    border: #00ABF0 2pt solid;
+    outline: none;
+    box-shadow: 3px 1.5px  #E5E7EB;
+}
+
+.column> *:nth-child(6):invalid{
+    border: red 2pt solid;
+    outline: none;
+    box-shadow: 3px 1.5px  #E5E7EB;
 }

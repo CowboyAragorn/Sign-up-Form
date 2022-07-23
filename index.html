@@ -19,36 +19,38 @@
         </div>
     </div>
     <div id="formRightContainer">
-        <div id="formRightInputsContainer">
-            <div id = 'descriptionContainer'>
-                <h1 class="descriptionText">You think you got what it takes?</h1>
-                <h1 class="descriptionText">We heard you said "They never woulda kept me there that long" while watching The Shawshank Redemption</h1>
-                <h1 class="descriptionText">Cmon big guy, take your chances</h1>
-            </div> 
-            
-            <div id="formInputsFlexContainer">
-                <div class="column" id="column1">
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
-
+        <form>
+            <div id="formRightInputsContainer">
+                <div id = 'descriptionContainer'>
+                    <h1 class="descriptionText">We heard you say "They never woulda kept me there that long!" while watching The Shawshank Redemption.</h1> 
+                    <h1 class = "descriptionText">Yeah, you did. You don't remember? Does "That librarian was such an idiot, I'm just not built like that," ring a bell?</h1>
+                    <h1 class="descriptionText">You think you got what it takes? C'mon big guy, take your chances.</h1>
+                </div> 
+                <div id="formInputsFlexContainer">
+                    <div class="column" id="column1">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Fresh" required>
+                        <label for="email">Email*</label>
+                        <input type="text" name="email" id="email" placeholder="Sendcash@email.com" required>
+                        <label for="password">Password*</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="column" id="column2">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Meat" required>
+                        <label for="phoneNumber">Phone Number*</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="333-333-3333" required>
+                        <label for="confirmPassword">Confirm Password*</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                </div>  
+                <div id="buttonFlexContainer">
+                    <button class="submitBtn">Go To Jail</button>
                 </div>
-                <div class="column" id="column2">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" name="phoneNumber" id="phoneNumber">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="text" name="confirmPassword" id="confirmPassword">
-
-                </div>
-            </div>  
-            <div id="buttonFlexContainer"><button class="submitBtn">Go To Jail</button></div>
-            <p class="loginCheckText">Already supposed to be here? Turn yourself in</p>
-        </div>
+                <p class="loginCheckText">Already supposed to be here? Turn yourself in</p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
+

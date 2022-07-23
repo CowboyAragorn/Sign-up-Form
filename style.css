@@ -113,7 +113,7 @@ body{
     background-color: #fbfbfb;
 }
 #formRightInputsContainer{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -136,9 +136,21 @@ body{
     gap: 3vh;
     font-size: 2rem;
 }
+#quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-left: 10%;
+    font-size: 1.7rem;
+    gap: 2vh;
+}
 
 #formInputsFlexContainer{
     padding: 10px 0;
+    gap: 15px;
    
    
 }
@@ -164,7 +176,6 @@ body{
 }
 
 input{
-    margin-bottom: 15px;
     border-radius: 7px;
     border: 2pt solid #E5E7EB;
     padding: .5rem;

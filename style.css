@@ -110,6 +110,7 @@ body{
 #formRightContainer{
     width: 65vw;
     height: 100vh;
+    background-color: #fbfbfb;
 }
 #formRightInputsContainer{
     margin-top: 10%;
@@ -136,12 +137,18 @@ body{
     font-size: 2rem;
 }
 
+#formInputsFlexContainer{
+    padding: 10px 0;
+   
+   
+}
 #formInputsFlexContainer> *{
     display: flex;
     justify-content: left;
     align-items: left;
     width: 100%;
     gap: 10%;
+
 }
 .row{
     width: 100%;
@@ -152,7 +159,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 33%
+    width: 33%;
+    gap: 5px;
 }
 
 input{
@@ -173,4 +181,34 @@ input{
     border: red 2pt solid;
     outline: none;
     box-shadow: 3px 1.5px  #E5E7EB;
+}
+
+#submitBtn{
+    width: 14rem;
+    height: 4rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--transparent-background-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#submitBtn:hover{
+    cursor: pointer;
+}
+
+#loginCheckText{
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+.loginSpan{
+    display: inline;
+    color: red;
+}
+#policeLink{
+    color: orange;
+    font-weight: bold;
+}
+#policeLink:visited{
+    color: goldenrod
 }

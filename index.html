@@ -10,7 +10,6 @@
 </head>
 <body>
     <div id="backgroundContainer">
-        <img id = 'img' src="https://images.unsplash.com/photo-1521785241181-092e2c5d2f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="Jail">
         <div id="logoContainer">
             <span class="material-symbols-outlined">
                 view_week
@@ -34,13 +33,14 @@
                 <div id="formInputsFlexContainer">
                     <div class="row" id="row1">
                         <div class="inputContainer">
-                            <label for="firstName">First Name*</label>
+                            <label for="firstName">First Name*<span class="successIcon">&nbsp&#10004</span></label>
                             <input 
                                 type="text"
                                 name="firstName" 
                                 id="firstName" 
                                 placeholder="Fresh " 
                                 required>
+                            <div class="errorMessage hidden">&#10071Please type your first name</div>
                          </div>
                         <div class="inputContainer">
                             <label for="lastName">Last Name*</label>
@@ -50,6 +50,7 @@
                                 id="lastName" 
                                 placeholder="Meat" 
                                 required>
+                            <div class="errorMessage hidden">&#10071Please type your last name</div>
                         </div>
                         </div>
                     <div class="row " id="row2">
@@ -61,6 +62,8 @@
                                 placeholder="333-333-3333" 
                                 pattern="[0-9\-]{10,14}"
                                 required>
+                            <div class="errorMessage hidden">&#10071Must be valid number, no parentheses</div>
+                            
                         </div>
                         <div class="inputContainer">
                             <label for="email">Email*</label>
@@ -71,6 +74,7 @@
                                 placeholder="Sendcash@email.com" 
                                 pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
                                 required>
+                            <div class="errorMessage hidden">&#10071Must be a valid email</div>
                         </div>
                     </div>
                     <div class="row" id="row3">
@@ -82,6 +86,7 @@
                                 id="password" 
                                 class="password"
                                 required>
+                            <div class="errorMessage hidden">&#10071Passwords must match</div>
                         </div>
                         <div class="inputContainer">
                             <label for="confirmPassword">Confirm Password*</label>
@@ -91,6 +96,8 @@
                                 id="confirmPassword" 
                                 class="password"
                                 required>
+                            <div class="errorMessage hidden">&#10071Passwords must match</div>
+
                         </div>
                     </div>
                 </div>  

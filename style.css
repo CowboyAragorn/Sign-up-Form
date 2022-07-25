@@ -170,11 +170,17 @@ body{
     margin-bottom: .5rem;
 }
 .inputContainer{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 33%;
-    gap: 5px;
+    gap: 2px;
+}
+.successIcon{
+    position: absolute;
+    left: 100%;
+    top: 33%
 }
 input{
     border-radius: 7px;
@@ -188,10 +194,10 @@ input:focus{
     box-shadow: 3px 1.5px  #E5E7EB;
 }
 .hidden{
-    display: none;
+    visibility: hidden;
 }
 .shown{
-    display: block;
+    visibility: visible;
 }
 .successIcon{
     color: green;

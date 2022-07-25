@@ -9,19 +9,28 @@ submitBtn.addEventListener('click', function(e){
     for(let i=0; i<inputs.length;i++){
         if(!inputs[i].validity.valid){
             inputs[i].classList.add('error');
+            //select the error message
             inputs[i].nextElementSibling.classList.add('shown');
             inputs[i].nextElementSibling.classList.remove('hidden');
+            //select the checkmark
+            inputs[i].previousElementSibling.classList.add('hidden');
+            inputs[i].previousElementSibling.classList.remove('shown');
             e.preventDefault();
         }
     }
 })
 
+//If valid
 for(let i=0; i<inputs.length;i++){
     inputs[i].addEventListener('input', function(){
         if(inputs[i].validity.valid){
             inputs[i].classList.remove('error');
+            //select the error message
             inputs[i].nextElementSibling.classList.add('hidden');
             inputs[i].nextElementSibling.classList.remove('shown');
+            //select the checkmark
+            inputs[i].previousElementSibling.classList.add('shown');
+            inputs[i].previousElementSibling.classList.remove('hidden');
 
         }
     })

@@ -19,7 +19,7 @@
         </div>
     </div>
     <div id="formRightContainer">
-        <form>
+        <form id="loginForm">
             <div id="formRightInputsContainer">
                 <div id = 'descriptionContainer'>
                     <h1 class="descriptionText">You just finished <span style="font-style:italic">The Shawshank Redemption</span>&nbspeh?</h1> 
@@ -39,7 +39,7 @@
                                 type="text"
                                 name="firstName" 
                                 id="firstName" 
-                                laceholder="Fresh " 
+                                placeholder="Fresh " 
                                 required>
                          </div>
                         <div class="inputContainer">
@@ -80,6 +80,7 @@
                                 type="password" 
                                 name="password" 
                                 id="password" 
+                                class="password"
                                 required>
                         </div>
                         <div class="inputContainer">
@@ -88,17 +89,19 @@
                                 type="password" 
                                 name="confirmPassword" 
                                 id="confirmPassword" 
+                                class="password"
                                 required>
                         </div>
                     </div>
                 </div>  
                 <div id="buttonFlexContainer">
-                    <button id="submitBtn">Get Locked Up</button>
+                    <button id="submitBtn" type="submit">Get Locked Up</button>
                 </div>
                 <p id="loginCheckText">Already have active warrants?&nbsp<span class='loginSpan' style="color:red"><a id='policeLink' href="https://www.tampa.gov/police" target="_blank">Turn yourself in</a></span></p>
             </div>
         </form>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
 

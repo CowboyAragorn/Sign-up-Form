@@ -194,6 +194,10 @@ input{
     box-shadow: 3px 1.5px  #E5E7EB;
 }
 
+#phoneNumber:invalid{
+    border: red 2pt solid;
+}
+
 #submitBtn{
     width: 14rem;
     height: 4rem;

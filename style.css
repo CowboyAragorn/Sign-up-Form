@@ -167,7 +167,7 @@ body{
 }
 .row{
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;;
 }
 .inputContainer{
     position: relative;
@@ -175,7 +175,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 33%;
-    gap: 2px;
+    gap: 5px;
 }
 .successIcon{
     position: absolute;
@@ -205,7 +205,7 @@ input:focus{
 }
 .errorMessage{
     color: red;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 /*selector for bottom two passwords*/

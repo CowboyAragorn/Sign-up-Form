@@ -18,8 +18,7 @@ submitBtn.addEventListener('click', function(e){
             e.preventDefault();
         }
     }
-})
-
+});
 //If valid
 for(let i=0; i<inputs.length;i++){
     inputs[i].addEventListener('input', function(){
@@ -31,7 +30,27 @@ for(let i=0; i<inputs.length;i++){
             //select the checkmark
             inputs[i].previousElementSibling.classList.add('shown');
             inputs[i].previousElementSibling.classList.remove('hidden');
-
+        }
+    })
+}
+//
+for(let i=0; i<inputs.length;i++){
+    inputs[i].addEventListener('input', function(){
+        if(!inputs[i].validity.valid){
+            //select the checkmark
+            inputs[i].previousElementSibling.classList.add('hidden');
+            inputs[i].previousElementSibling.classList.remove('shown');
+        }
+    })
+};
+//when clicking out of an input
+for(let i=0; i<inputs.length;i++){
+    inputs[i].addEventListener('blur', function(){
+        if(!inputs[i].validity.valid){
+            inputs[i].classList.add('error');
+            //select the error message
+            inputs[i].nextElementSibling.classList.add('shown');
+            inputs[i].nextElementSibling.classList.remove('hidden');
         }
     })
 }

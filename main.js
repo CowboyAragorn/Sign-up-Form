@@ -1,6 +1,7 @@
 const loginForm = document.querySelector('#loginForm');
 const bothPasswords = document.querySelectorAll('.password')
 const inputs = document.querySelectorAll('[required]');
+const password = document.querySelector('#password')
 const confirmPassword = document.querySelector('#confirmPassword');
 const submitBtn = document.querySelector('#submitBtn')
 //Display error//
@@ -54,3 +55,13 @@ for(let i=0; i<inputs.length;i++){
         }
     })
 }
+//Check that passwords equal each other
+submitBtn.addEventListener('click', function(e){
+    if(password.value != confirmPassword.value){
+        e.preventDefault();
+        password.classList.add('error')
+        password.nextElementSibling.classList.add('shown')
+        confirmPassword.classList.add('error')
+        confirmPassword.nextElementSibling.classList.add('shown')
+    }
+})

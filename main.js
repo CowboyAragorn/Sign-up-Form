@@ -60,8 +60,10 @@ submitBtn.addEventListener('click', function(e){
     if(password.value != confirmPassword.value){
         e.preventDefault();
         password.classList.add('error')
-        password.nextElementSibling.classList.add('shown')
+        password.nextElementSibling.classList.add('shown');
+        password.nextElementSibling.innerHTML='&#10071Passwords must match'
         confirmPassword.classList.add('error')
         confirmPassword.nextElementSibling.classList.add('shown')
+        confirmPassword.nextElementSibling.innerHTML='&#10071Passwords must match'
     }
 })

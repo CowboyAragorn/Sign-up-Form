@@ -92,7 +92,7 @@
                                 id="password" 
                                 class="password"
                                 required>
-                            <div class="errorMessage hidden">&#10071Passwords must match</div>
+                            <div class="errorMessage hidden">&#10071Please type a password</div>
                         </div>
                         <div class="inputContainer">
                             <label for="confirmPassword">Confirm Password*</label>
@@ -103,13 +103,21 @@
                                 id="confirmPassword" 
                                 class="password"
                                 required>
-                            <div class="errorMessage hidden">&#10071Passwords must match</div>
+                            <div class="errorMessage hidden">&#10071Please type a password</div>
 
                         </div>
                     </div>
-                </div>  
-                <div id="buttonFlexContainer">
-                    <button id="submitBtn" type="submit">Get Locked Up</button>
+                </div>
+                <div id="bottomContainer">  
+                    <div id="buttonFlexContainer">
+                        <button id="submitBtn" type="submit">Get Locked Up</button>
+                    </div>
+                        <ul id="ruleList">
+                            <h1 id="ruleTitle">Password Guidelines</h1>
+                            <li class="rule">Has 8 characters</li>
+                            <li class="rule">Has a symbol</li>
+                            <li class="rule">Passwords must match</li>
+                        </ul>
                 </div>
                 <p id="loginCheckText">Already have active warrants?&nbsp<span class='loginSpan' style="color:red"><a id='policeLink' href="https://www.tampa.gov/police" target="_blank">Turn yourself in</a></span></p>
             </div>

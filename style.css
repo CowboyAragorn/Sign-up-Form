@@ -214,6 +214,22 @@ input:focus{
     outline: none;
     box-shadow: 3px 1.5px  #E5E7EB;
 }
+#bottomContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+#ruleList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#ruleTitle{
+    font-size: 1.5rem;
+    text-decoration: underline
+}
+.rule{
+}
 #submitBtn{
     width: 14rem;
     height: 4rem;
